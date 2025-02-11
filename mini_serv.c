@@ -91,7 +91,7 @@ int main(int argc, char **argv) {
     // Creación del socket y verificación de error
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd == -1)
-        printf("Fatal error\n");
+        erro_msg("Fatal error\n");
 
     bzero(&servaddr, sizeof(servaddr));
 
